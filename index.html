@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>北京市医药有限责任公司防伪验证查询系统</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+	<script src="http://mobile.mlfangwei.com/lsdlcx.js"></script>
+	<script src="http://mobile.mlfangwei.com/fwcx.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document" style="padding-top:20px;">
+
+    <!-- Fixed navbar -->
+      <div class="container theme-showcase" role="main">
+
+	  <img class="img-responsive" src="back.jpg">
+      <div class="page-header">
+        <h1>北京市医药有限责任公司防伪验证查询系统</h1>
+      </div>
+      <div class="row">
+		<div class="col-sm-8">
+		   <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">查询验证</h3>
+            </div>
+            <div class="panel-body">
+				<input type="text" class="form-control" placeholder="请输入防伪验证码" name="FwCode" id="FwCodec">
+				<br>
+				<button class="btn btn-lg btn-primary btn-block" onclick="fwchack('FwCodec','ReturnResult')">点击验证</button>
+				<br>
+				<div class="alert alert-danger" id="ReturnResult">这里显示您的查询结果</div>
+            </div>	 
+		</div>
+		</div>
+        <div class="col-sm-4">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">温馨提示</h3>
+            </div>
+            <div class="panel-body">
+<h6>1、刮开防伪标签涂层,获得一组防伪防伪编码</h6>
+<h6>2、从左至右,从上至下依次输入商品上的防伪编码</h6>
+<h6>3、点击[码上查]按钮,验证所要查询防伪编码真伪</h6>
+<h6>4、防伪查询结果说明</h6>
+<ul>
+<li><h6>结果一：编码有效,请放心购买</h6></li>
+<li><h6>结果二：编码无效,请核实后重试</h6></li>
+<li><h6>结果三：多次查询,请谨防假冒</h6></li>
+</ul>
+            </div>
+          </div>
+        </div><!-- /.col-sm-4 -->
+    </div> <!-- /container -->
+
+  <div class="row">
+
+        <h2 class="form-signin-heading">代理商证书查询系统</h2>
+		<input type="text" class="form-control" placeholder="输入身份证号或微信号" name="DlCode" id="DlCode">
+		<br>
+        <button class="btn btn-lg btn-primary btn-block"  onclick="dlcx('DlCode','DlReturnResult')">点击查询</button>
+		<br>
+		<div id="DlReturnResult">这里显示您的查询结果</div>
+
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
